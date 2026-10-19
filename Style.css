@@ -1,0 +1,152 @@
+
+/* 1. Định dạng chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f1f5f9;
+    color: #334155;
+    line-height: 1.7;
+}
+
+/* 2. Tiêu đề trang web */
+.header {
+    background-color: #2563eb;
+    background-image: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #93c5fd;
+}
+
+.header h1 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+.header p {
+    margin: 0;
+}
+
+/* 3. Nội dung chính */
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+/* 4. Các phần nội dung */
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 1px solid #dbeafe;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #2563eb;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+/* 5. Ảnh đại diện */
+.profile {
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2563eb;
+    margin: 10px auto 20px;
+}
+
+/* 6. Danh sách sở thích */
+.hobbies ul {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+.hobbies li {
+    margin: 8px 0;
+}
+
+.hobbies li:hover {
+    color: #2563eb;
+}
+
+/* 7. Mục tiêu học tập */
+.goals {
+    background-color: #eff6ff;
+    border-left: 5px solid #2563eb;
+}
+
+/* 8. Bảng thông tin liên hệ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+}
+
+tr:nth-child(even) td {
+    background-color: #eff6ff;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 9. Chân trang */
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* 10. Hiển thị trên điện thoại */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 23px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        overflow-wrap: anywhere;
+    }
+}
